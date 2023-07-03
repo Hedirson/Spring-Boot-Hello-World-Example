@@ -53,6 +53,28 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+       				 <groupId>org.codehaus.mojo</groupId>
+       				 <artifactId>findbugs-maven-plugin</artifactId>
+       				 <version>3.0.6-SNAPSHOT</version>
+     			 </plugin>
+			      <plugin>
+        			<groupId>org.apache.maven.plugins</groupId>
+        			<artifactId>maven-pmd-plugin</artifactId>
+        			<version>3.21.0</version>
+     			 </plugin>
+			        <plugin>
+          				<groupId>org.apache.maven.plugins</groupId>
+          				<artifactId>maven-checkstyle-plugin</artifactId>
+          				<version>3.3.0</version>
+          				<reportSets>
+            				<reportSet>
+              				<reports>
+                		<report>checkstyle</report>
+              			</reports>
+           			 </reportSet>
+          			</reportSets>
+        			</plugin>
 		</plugins>
 	</build>
 
